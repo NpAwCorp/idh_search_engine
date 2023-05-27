@@ -1,0 +1,20 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./company_search_engine_backend
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./company_search_engine_backend:/app
+  frontend:
+    build:
+      context: ./company_search_engine_frontend
+      dockerfile: Dockerfile
+    ports:
+      - 8501:8501
+    volumes:
+      - ./company_search_engine_frontend:/app
+    depends_on:
+      - backend
