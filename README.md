@@ -23,11 +23,11 @@ If you have any additional questions, feel free to contact us via email : annop.
 - The service provides a single endpoint to use : http://localhost:8000/api/search
 - Once the service is started, you can access the Swagger UI at  http://localhost:8000/api/docs
 
-## Frountend
+## Frontend
 - Once the service is started, the frontend web application will be accessible at http://localhost:8501
 **We strongly recommend testing via our frontend web application for the best experience.**
 
-## Invoke an endpoint using python
+## Invoke an endpoint
 If you need to access the API directly without using our frontend, you can use the following code in Python:
 # python
 ```
